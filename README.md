@@ -1,2 +1,2 @@
 # gobelglobal
-PWP repository
+My PWP will be a fictional industrial companies homepage
