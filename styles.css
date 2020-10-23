@@ -1,0 +1,127 @@
+@media(max-width:576px) {
+    .gg-icon {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
+@media(min-width:576px) {
+    .gg-icon {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+
+h1 {
+    display: block;
+text-align: center}
+}
+
+    /*****custom nav class name ".my-nav" optional name******/
+    /*changes background bar*/
+    .gg-nav {
+        background: white;
+        border: darkblue solid 0.5rem;
+
+
+    }
+
+    /*This is default, leftmost area, brand logo or brand text if no image is uploaded*/
+    .gg-nav.navbar-brand {
+        color: black;
+    }
+
+    /* If for text you want to hover over it for different effect*/
+    .gg-nav.navbar-brand:hover {
+        color: white;
+    }
+
+    /* Changes color and properties like font-style of rest of <li> links*/
+    .gg-nav .nav-link {
+        color: black;
+
+    }
+
+    /*Change link properties on hover*/
+    .gg-nav .nav-link:hover {
+        color: white;
+    }
+
+    /*If menu is dropdown will change some dropdown properties*/
+    .my-nav .dropdown-menu {
+
+    }
+
+    /*Must make new class to change toggler image and color.  ".custom-toggler" is place holder name and can be changed*/
+    .gg-toggler.navbar-toggler {
+        border-color: lawngreen;
+        stroke: lawngreen;
+    }
+
+
+    .gg-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        color: lawngreen;
+
+    }
+
+
+.parallelogram {
+    max-height: fit-content;
+    max-width: fit-content;
+    opacity: 50%;
+    padding: 1rem;
+
+}
+
+.parallelogram:hover{
+    opacity: 100%;
+
+}
+/*
+.card-deck .card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-right: 0px;
+    margin-bottom: 0;
+    margin-left: 0px;
+}
+}*/
+
+.middle-images {
+
+}
+
+.middle-images img {
+max-width: fit-content;
+    max-height: fit-content;
+    object-fit: cover;
+}
+
+#right-panel-mask {
+    mask-image: url("images/panel-right.svg");
+    mask-mode: alpha;
+}
+
+
+#panel-right_1 {
+    z-index: 1;
+}
+#center-panel {
+    background-image: url("images/panel.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+
+.grey-column-scroll {
+    max-height: 550px;
+    overflow-y: scroll;
+}
+
+#grey-column {
+
+    width: 100%;
+    padding: 1rem;
+
+}
