@@ -11,7 +11,12 @@
     <title>Gobel Global Industries</title>
 </head>
 <body>
-<nav class="navbar gg-nav navbar-expand-lg">
+<div class="container-fluid">
+    <div class="row  d-flex justify-content-center">
+        Disclaimer: This site is a fictional entity. No services are rendered nor products sold!
+    </div>
+</div>
+<nav class="navbar gg-nav navbar-expand-lg ml-auto">
     <a class="navbar-brand" href="#">
         <img class="gg-icon img-fluid" src="images/Logo-idea-5.png" alt="Go Glo Icon">
     </a>
@@ -19,7 +24,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav d-flex" >
+        <ul class="navbar-nav d-flex ml-auto" >
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -32,11 +37,11 @@
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
-            <li class="nav-item dropdown ml-auto">
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Login
                 </a>
-                <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+                <div class="dropdown-menu dropdown-menu-right px-1" >
                     <form class="form-horizontal" method="post" accept-charset="UTF-8">
                         <input class="form-control login" type="text" name="username" placeholder="Username.."><br>
                         <input class="form-control login" type="password" name="password" placeholder="Password.."><br>
@@ -47,17 +52,47 @@
         </ul>
     </div>
 </nav>
-<div class="container industries-row">
-    <div class="row header">
+<!--
+<div class="container">
+    <div class="row d-flex justify-content-around">
+
+
+            <div class="col-lg-4">
+                 <img src="images/Products_Icon.png" id="products">
+            </div>
+            <div class="col-lg-4 d-flex justify-content-center">
+                 <img src="images/Products_Icon.png" id="products">
+            </div>
+            <div class="col-lg-4 d-flex justify-content-center">
+                 <img src="images/Products_Icon.png" id="products">
+            </div>
+
+
+    </div>
+</div>-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" >
+
+<ul class="nav d-flex justify-content-around mt-3">
+    <li class="nav-item">
+        <a class="nav-link active" href="#"><img src="images/Products_Icon.png" id="products"><p class="d-flex justify-content-center">Products</p></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#"><img src="images/Products_Icon.png" id="products"><p class="d-flex justify-content-center">Products</p></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#"><img src="images/Products_Icon.png" id="products"><p class="d-flex justify-content-center">Products</p></a>
+    </li>
+</ul>
+<div class="container-fluid industries-row">
+    <div class="row header bg-primary">
         <div class="col-lg-9"><h1>Industries</h1>
         </div>
-        <div class="col-lg-3 d-none d-lg-block mb-10 d-flex justify-content-center wo-wrap"><h1>Press Releases</h1></div>
+        <div class="col-lg-3 d-none d-lg-block mb-10 d-flex justify-content-center wo-wrap"><h1>News</h1></div>
     </div>
 </div>
-<div class="container industries-row">
-
-    <div class="row ">
-        <div class="col-lg-9">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 ">
             <div class="row">
                 <div class="col-lg-6">
                     <span class="industries-text">Solar</span>
@@ -77,24 +112,62 @@
                     <span class="industries-text">Vacuum</span>
                     <img class="industries img-fluid" src="images/vacuum-lady.jpg" alt="vacuum">
                 </div>
-
             </div>
         </div>
         <div class="col-lg-3 d-none d-lg-block grey-column-scroll pb-0.3 pt-2 mt-3">
-        <img src="images/right-column.jpg" id="grey-column" alt="News">
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col">
-        <div class="shape-playground-2 float-lg-left"> </div>
-            <div class="col">
-        <p> Gobel Global, established in 2010 has since become a leader in engineering and establishment of energy and network infrastructures world-wide.   Brett and Christian Gobel, it’s founders, shared the idea producing clean and economical energy solutions is paramount in a world growing rapidly in population.  Beginning with the Southwest Solar project, Gobel Global’s maiden endeavor, began by creating the U.S’s largest solar farm.  The GSSA (Great SouthWest Solar Array) is currently the worlds largest photovoltaic network.  Spanning 4 states, it is capable of generating 500 million GW of electricity per day, enough to power the entire region.</p>
+            <div class="card-deck">
+                <div class="row">
+                <div class="card bg-dark">
+                    <img class="card-img-top" src="images/1200px-CNN.svg.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">Gobel Global Seeks New Venture</h5>
+
+                        <p class="card-text"><small class="text-muted">10/07/2020</small></p>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row justify-content-center bg-primary">
+                <h2>About Us</h2>
+            </div>
+        </div>
+        <div class="col about-us">
+            <div class="col">
+        <img class="shape-playground-2 float-left" src="images/network-globe.png">
+            </div>
+            <div class="col">
+        <span> Gobel Global, established in 2010 has since become a leader in engineering and establishment of energy and network infrastructures world-wide.   Brett and Christian Gobel, it’s founders, shared the idea producing clean and economical energy solutions is paramount in a world growing rapidly in population.  Beginning with the Southwest Solar project, Gobel Global’s maiden endeavor, began by creating the U.S’s largest solar farm.  The GSSA (Great SouthWest Solar Array) is currently the worlds largest photovoltaic network.  Spanning 4 states, it is capable of generating 500 million GW of electricity per day, enough to power the entire region.</span>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
 <!--
 <div class="jumbotron jumbo-breakWord mt-2">S
     <div class="container-fluid">
@@ -109,18 +182,7 @@
         </div>
     </div>
 </div>-->
-<div class="container">
-    <div class="row d-flex justify-content-around">
-        <ul class="d-flex justify-content-between">
-        <div class="col-lg-4"><li>Products</li>
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center"><li>Products</li>
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center"><li>Products</li>
-        </div>
-        </ul>
-    </div>
-</div>
+
 
 <div class="container-fluid">
     <footer class="page-footer font-small bg-dark">

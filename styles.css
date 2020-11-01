@@ -13,7 +13,11 @@
 
 }
 
-
+.disclaimer {
+    height: 2em;
+    background-color: red;
+    color: white;
+}
 
 
 
@@ -28,6 +32,8 @@ text-align: center;}
     /*changes background bar*/
     .gg-nav {
         background: white;
+        border-bottom: steelblue solid ;
+        border-top: steelblue solid;
 
 
 
@@ -40,7 +46,7 @@ text-align: center;}
 
     /* If for text you want to hover over it for different effect*/
     .gg-nav.navbar-brand:hover {
-        color: white;
+        background-color: blue;
     }
 
     /* Changes color and properties like font-style of rest of <li> links*/
@@ -51,7 +57,7 @@ text-align: center;}
 
     /*Change link properties on hover*/
     .gg-nav .nav-link:hover {
-        color: white;
+        color: steelblue;
     }
 
     /*If menu is dropdown will change some dropdown properties*/
@@ -119,8 +125,8 @@ text-align: center;}
 .grey-column-scroll {
     max-height: 521px;
     overflow-y: scroll;
-    border: darkblue solid;
-    background-color: grey;
+   overflow-x: hidden;
+
 
 
 }
@@ -183,10 +189,59 @@ span.industries-text:hover {
 .shape-playground-2 {
     shape-outside: padding-box circle();
 
-    clip-path: padding-box circle();
-    width: 300px;
-    height: 300px;
+
+    max-width: 25rem ;
+    max-width: 25rem;
 
     opacity: .2;
-    background-color: purple;
+
+}
+
+.about-us {
+    margin-top: 1rem;
+}
+
+.about-us-text {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    max-width: border-box;
+    overflow-x: auto;
+}
+.card-img-top {
+    max-width:10%;
+    max-height: 10%;
+}
+
+#products {
+    max-width: 6rem;
+    max-height: 6rem;
+    animation: pulse 2s;
+
+}
+
+@keyframes pulse {
+    0% {
+        padding: 15px;
+        box-shadow: steelblue;
+    }
+
+    15% {
+        padding: 30px;
+        box-shadow: steelblue;
+    }
+
+    45% {
+        box-shadow: steelblue;
+    }
+
+    85% {
+        box-shadow: steelblue;
+    }
+
+    100% {
+        box-shadow: steelblue;
+    }
 }
