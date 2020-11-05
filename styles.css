@@ -13,6 +13,17 @@
 
 }
 
+@media(min-width:576px) {
+    .gg-icon {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+}
+
+
+
+
 .disclaimer {
     height: 2em;
     background-color: red;
@@ -22,7 +33,7 @@
 
 
 
-h1 {
+#industries-header {
     display: block;
 text-align: center;}
 
@@ -31,9 +42,10 @@ text-align: center;}
     /*****custom nav class name ".my-nav" optional name******/
     /*changes background bar*/
     .gg-nav {
-        background: white;
+
         border-bottom: steelblue solid ;
         border-top: steelblue solid;
+        background-color: grey;
 
 
 
@@ -46,7 +58,7 @@ text-align: center;}
 
     /* If for text you want to hover over it for different effect*/
     .gg-nav.navbar-brand:hover {
-        background-color: blue;
+
     }
 
     /* Changes color and properties like font-style of rest of <li> links*/
@@ -57,7 +69,7 @@ text-align: center;}
 
     /*Change link properties on hover*/
     .gg-nav .nav-link:hover {
-        color: steelblue;
+        color: white;
     }
 
     /*If menu is dropdown will change some dropdown properties*/
@@ -67,17 +79,22 @@ text-align: center;}
 
     /*Must make new class to change toggler image and color.  ".custom-toggler" is place holder name and can be changed*/
     .gg-toggler.navbar-toggler {
-        border-color: blue;
-        stroke: blue;
-        background-color: blue;
+        border-color: black;
+        stroke: black;
+
     }
 
 
     .gg-toggler .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 200, 200%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         background-color: ;
 
     }
+
+.container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
 
 .industries {
@@ -122,8 +139,9 @@ text-align: center;}
 
 
 
-.grey-column-scroll {
-    max-height: 521px;
+.news-column-scroll {
+    width: auto;
+    height: 520px;
     overflow-y: scroll;
    overflow-x: hidden;
 
@@ -131,12 +149,7 @@ text-align: center;}
 
 }
 
-#grey-column {
 
-    width: 100%;
-    padding: 1rem;
-
-}
 
 /*.col-lg-6 {
     display: inline-block;
@@ -148,7 +161,7 @@ text-align: center;}
     opacity: 0;
     font-family: "Eras Bold ITC";
     font-weight: bolder;
-    color: darkblue;
+    color: white;
     z-index: 1;
     width: 93%;
     height: 96%;
@@ -163,7 +176,7 @@ text-align: center;}
 
 
 
-span.industries-text:hover ~ img {
+span.industries-text:hover ~ img{
     opacity: 30%;
     outline-offset: -5rem;
     transition: 1s;
@@ -173,8 +186,10 @@ span.industries-text:hover ~ img {
 
 span.industries-text:hover {
     opacity: 100%;
-    color: black;
+    color: #3266bb;
     transition: 1s;
+
+
 }
 
 
@@ -186,16 +201,19 @@ span.industries-text:hover {
     transition: width 2s;
 
 }*/
-.shape-playground-2 {
-    shape-outside: padding-box circle();
+.circular-shape-wrap {
+    shape-outside: padding-box circle(58%);
+    max-width: 25%;
+    opacity: .4;
+    margin: 1rem 1.3rem 1rem 0rem;
+    border: solid goldenrod;
+    border-radius: 10em;
+    z-index: 1;
 
-
-    max-width: 25rem ;
-    max-width: 25rem;
-
-    opacity: .2;
 
 }
+
+
 
 .about-us {
     margin-top: 1rem;
@@ -211,13 +229,14 @@ span.industries-text:hover {
     overflow-x: auto;
 }
 .card-img-top {
+    margin: 0.7rem;
     max-width:10%;
     max-height: 10%;
 }
 
 #products {
-    max-width: 6rem;
-    max-height: 6rem;
+    max-width: 8rem;
+    max-height: 8rem;
     animation: pulse 2s;
 
 }
@@ -226,22 +245,123 @@ span.industries-text:hover {
     0% {
         padding: 15px;
         box-shadow: steelblue;
+        transition: ease-in 1s;
     }
 
     15% {
         padding: 30px;
         box-shadow: steelblue;
+        transition: ease-in 1s;
     }
 
     45% {
         box-shadow: steelblue;
+        transition: ease-in 1s;
     }
 
     85% {
         box-shadow: steelblue;
+        transition: ease-in 1s;
     }
 
     100% {
         box-shadow: steelblue;
+        transition: ease-in 1s;
     }
+}
+
+
+.counter-header {
+    width: 100%;
+    height: 100px;
+    background-color: steelblue ;
+}
+
+
+.counter-body {
+    width: 100%;
+    height: 300px;
+    background-color: grey;
+}
+
+.bg-primary {
+    color: white;
+    background-color: #3266bb !important;
+    font-family: "Calibri Light";
+    border-radius: 0.5rem;
+
+
+}
+
+.dropdown-menu {
+    min-width: 15rem;
+    background-color: rgb(190, 190, 190);
+}
+
+.gg-footer {
+    background-color: grey;
+
+}
+
+.globe-position {
+    position: relative;
+}
+
+.US-map {
+    position: relative;
+    top: 0;
+    left: 25%;
+    max-width: 35%;
+
+}
+
+.justify {
+    text-align: justify;
+    text-justify: auto;
+}
+
+#svg-map {
+    width: 65%;
+    height: auto;
+
+}
+
+
+path {
+    opacity: 50%;
+}
+
+path:hover {
+    opacity: 100%;
+    transition: 0.5s;
+
+}
+
+#about-us-divider {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    height: auto;
+    width: 0.1rem;
+    background-color: black;
+}
+
+.jumbotron {
+    background-image: url("images/background-3228704_1280.webp");
+    background-size: 100% 100%;
+    opacity: .4;
+
+
+}
+
+.jumbo-info {
+    opacity: 1;
+    width: 45rem;
+    height: 25rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.info-size {
+    height: 100%;
 }
