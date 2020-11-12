@@ -141,7 +141,7 @@ text-align: center;}
 
 .news-column-scroll {
     width: auto;
-    height: 520px;
+    height: 521px;
     overflow-y: scroll;
    overflow-x: hidden;
 
@@ -288,7 +288,8 @@ span.industries-text:hover {
     color: white;
     background-color: #3266bb !important;
     font-family: "Calibri Light";
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
+
 
 
 }
@@ -346,22 +347,29 @@ path:hover {
 }
 
 .jumbotron {
-    background-image: url("images/background-3228704_1280.webp");
+    background-image: url("../../images/background-3228704_1280.webp");
     background-size: 100% 100%;
-    opacity: .4;
+
 
 
 }
 
 .jumbo-info {
     opacity: 1;
-    width: 45rem;
-    height: 25rem;
-    background-color: white;
+
+
     display: flex;
     justify-content: center;
 }
 
 .info-size {
     height: 100%;
+}
+
+input {
+    color: white;
+}
+
+label {
+    color: white;
 }
