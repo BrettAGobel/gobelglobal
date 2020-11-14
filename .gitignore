@@ -1,5 +1,5 @@
 .DS_Store
 /.idea
 /vendor
-/src/node_modules
+/src/node_modules/
 /src/secrets.env
