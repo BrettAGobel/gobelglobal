@@ -33,10 +33,10 @@ const handleSendingEmail = (request, response, next) => {
     response.append("content-Type", "text/html")
     const errors = validationResult(request)
 
-    if (!errors.isEmpty()) {
+    if (errors.isEmpty()===false) {
         const currentError = errors.array()[0]
 
-        return response.send(`<div class="alert alert-danger" role="alert"> <strong>Oh Snap</strong> ${currentError.msg}</div>` )
+        return response.send(`<div class="alert alert-danger" role="alert"> <strong>Oh Snap!</strong> ${currentError.msg}</div>` )
     }
 
     if(request.recaptcha.error) {
@@ -48,7 +48,7 @@ const handleSendingEmail = (request, response, next) => {
     const {email, subject, name, message} = request.body
 
     const mailgunData = {
-        to: process.env.MAIL_RECIPENT,
+        to: process.env.MAIL_RECIPIENT,
         from: `Mailgun Sandbox <postmaster@${process.env.MAILGUN_DOMAIN}>`,
         subject: `${name} - ${email} : ${subject}`,
         text: message

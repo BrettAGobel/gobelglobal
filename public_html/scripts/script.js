@@ -1,10 +1,9 @@
-console.log('is this on')
 
 $(document).ready(function () {
     $("#contact").validate({
         debug: true,
         errorClass: "alert-danger",
-        errorlabelContainer: 'output-area',
+        errorlabelContainer: '#output-area',
         errorElement: "div",
 
         rules: {
@@ -14,7 +13,7 @@ $(document).ready(function () {
          },
          email: {
              email: true,
-             required: true,
+             required: true
 
          },
          message: {
@@ -39,9 +38,13 @@ $(document).ready(function () {
             $("#contact").ajaxSubmit({
                 type: "POST",
                 url: $("#contact").attr('action'),
-                success: () => {
-                    $("output-area").css("display", "")
-                    $("output-area").html(ajaxOutput)
+                success: (ajaxOutput) => {
+                    $("#output-area").css("display", "")
+                    $("#output-area").html(ajaxOutput)
+
+                    if ($(".alert-success").length >= 1) {
+                        $("#contact")[0].reset()
+                    }
                 }
             })
         }
