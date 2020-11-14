@@ -367,9 +367,13 @@ path:hover {
 }
 
 input {
-    color: white;
+    color: black;
 }
 
 label {
     color: white;
+}
+
+#message {
+    width: 20rem;
 }
