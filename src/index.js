@@ -48,7 +48,7 @@ const handleSendingEmail = (request, response, next) => {
     const {email, subject, name, message} = request.body
 
     const mailgunData = {
-        to: process.env.MAIL_RECIPIENT,
+        to: process.env.MAIL_RECIPENT,
         from: `Mailgun Sandbox <postmaster@${process.env.MAILGUN_DOMAIN}>`,
         subject: `${name} - ${email} : ${subject}`,
         text: message
@@ -60,6 +60,8 @@ const handleSendingEmail = (request, response, next) => {
         }
         return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
     })
+
+
 
 
 
