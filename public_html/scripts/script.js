@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#contact").validate({
         debug: true,
         errorClass: "alert-danger",
-        errorlabelContainer: '#output-area',
+        errorLabelContainer: '#output-area',
         errorElement: "div",
 
         rules: {
@@ -23,15 +23,15 @@ $(document).ready(function () {
         },
         messages: {
             name: {
-                required: "Name is a required",
+                required: "Name is a required field",
             },
             email: {
-                required: "is a required field",
-                email: "please provide a valid email"
+                required: "Email is a required field",
+                email: "Please provide a valid email"
             },
             message:  {
-                required: "message is a required field",
-                maxlength: "message is too long"
+                required: "Message is a required field",
+                maxlength: "Message is too long"
             }
         },
         submitHandler: (form) => {
