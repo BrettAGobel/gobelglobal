@@ -74,7 +74,8 @@ const handleGetRequest = (request, response) => {
 
 indexRoute.route("/")
     .get(handleGetRequest)
-    .post(recaptcha.middleware.verify, validation, handleSendingEmail)
+    .post(recaptcha.middleware.verify,validation, handleSendingEmail)
+
 app.use("/apis", indexRoute);
 
 
