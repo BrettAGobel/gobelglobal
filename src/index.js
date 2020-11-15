@@ -48,7 +48,7 @@ const handleSendingEmail = (request, response, next) => {
     const {email, subject, name, message} = request.body
 
     const mailgunData = {
-        to: process.env.MAIL_RECIPENT,
+        to: process.env.MAIL_RECIPIENT,
         from: `Mailgun Sandbox <postmaster@${process.env.MAILGUN_DOMAIN}>`,
         subject: `${name} - ${email} : ${subject}`,
         text: message
@@ -56,7 +56,7 @@ const handleSendingEmail = (request, response, next) => {
 
     mg.messages().send(mailgunData, (error) => {
         if (error) {
-            return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong> Unable to send email error with email sender</div>`))
+            return response.send(Buffer.from("<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong> Unable to send email error with email sender</div>"))
         }
         return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
     })
