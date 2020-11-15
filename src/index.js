@@ -11,7 +11,7 @@ const Recaptcha = require("express-recaptcha").RecaptchaV2
 
 // app.use allows for different middleware to be brought into Express
 // Morgan: a logger for express so that we have a record for debugging.
-app.use(morgan("dev"));
+app.use(morgan('dev'));
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
@@ -40,7 +40,7 @@ const handleSendingEmail = (request, response, next) => {
     }
 
     if(request.recaptcha.error) {
-        return response.send(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`)
+        return response.send(`<div class="alert alert-danger" role="alert"><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`)
     }
 
     const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
