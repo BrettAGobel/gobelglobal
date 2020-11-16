@@ -33,7 +33,7 @@ $(document).ready(function () {
                 maxlength: "message is to long"
             }
         },
-        submitHandler: (form) => {
+        submitHandler: () => {
             $("#contact").ajaxSubmit({
                 type: "POST",
                 url: $("#contact").attr('action'),
