@@ -13,16 +13,6 @@
 
 }
 
-@media(min-width:576px) {
-    .gg-icon {
-        max-width: 80px;
-        max-height: 80px;
-    }
-
-}
-
-
-
 
 .disclaimer {
     height: 2em;
